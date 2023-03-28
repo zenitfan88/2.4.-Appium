@@ -9,7 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-public class EmptyInputFieldTestAppium {
+public class InputFieldTestAppium {
 
     private AndroidDriver driver;
     private String emptyText = "       ";
@@ -41,7 +41,7 @@ public class EmptyInputFieldTestAppium {
     }
 
     @Test
-    public void sampleTest() throws InterruptedException {
+    public void inputActivityTest() throws InterruptedException {
         MainScreen mainScreen = new MainScreen(driver);
         mainScreen.userInput.sendKeys(text);
         mainScreen.buttonActivity.isDisplayed();
